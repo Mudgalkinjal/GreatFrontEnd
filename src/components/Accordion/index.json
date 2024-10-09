@@ -1,0 +1,33 @@
+[
+    {
+        "id":0,
+      "header": "Item 1",
+      "content": "This is the content for item 1. It can include more detailed information.",
+      "active":true
+    },
+    {
+        "id":1,
+      "header": "Item 2",
+      "content": "This is the content for item 2. Here you can add any relevant information.",
+      "active":false
+    },
+    {
+        "id":2,
+      "header": "Item 3",
+      "content": "This is the content for item 3. You can put additional text or elements here.",
+      "active":false
+    },
+    {
+        "id":3,
+      "header": "Item 4",
+      "content": "This is the content for item 4. Feel free to customize it as needed.",
+      "active":false
+    },
+    {
+        "id":4,
+      "header": "Item 5",
+      "content": "This is the content for item 5. You can include images, links, or anything else.",
+      "active":true
+    }
+  ]
+  
