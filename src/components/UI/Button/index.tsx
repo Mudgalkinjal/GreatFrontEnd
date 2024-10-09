@@ -1,10 +1,16 @@
 interface IProps {
   // variant?: 'Primary' | 'Secondary';
-  children: React.ReactNode;
+  children: React.ReactNode
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
+  id?: string
 }
 
-const Button = ({ children }: IProps) => {
-  return <button>{children}</button>;
-};
+const Button = ({ children, onClick, ...props }: IProps) => {
+  return (
+    <button onClick={onClick} {...props}>
+      {children}
+    </button>
+  )
+}
 
-export default Button;
+export default Button
