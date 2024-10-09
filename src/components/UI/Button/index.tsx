@@ -2,12 +2,17 @@ import React from "react";
 
 interface IProps {
   // variant?: 'Primary' | 'Secondary';
-  children: React.ReactNode;
-  onClick:(event:React.MouseEvent<HTMLButtonElement>)=>void;
+  children: React.ReactNode
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
+  id?: string
 }
 
-const Button = ({ children, onClick }: IProps) => {
-  return <button onClick={onClick}>{children}</button>;
-};
+const Button = ({ children, onClick, ...props }: IProps) => {
+  return (
+    <button onClick={onClick} {...props}>
+      {children}
+    </button>
+  )
+}
 
-export default Button;
+export default Button
