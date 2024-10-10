@@ -1,0 +1,8 @@
+#headerContainer {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.headerElem {
+  margin: 0.2rem;
+}
