@@ -4,7 +4,36 @@
 }
 
 #imageContainer {
+  width: 100%;
+}
+
+#imageContainer img {
+  width: 100%;
 }
 
 .leftRightElem {
+}
+
+.filledCircleStyle {
+  background-color: black;
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.emptyCircleStyle {
+  background-color: transparent;
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+}
+
+#filterComponent {
+  text-align: center;
 }

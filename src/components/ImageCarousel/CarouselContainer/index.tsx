@@ -53,7 +53,7 @@ const CarouselContainer = ({ images }: iProp) => {
           &#8594;
         </Button>
       </div>
-      <BottomFilter />
+      <BottomFilter activeBlock={activeImg} len={length} />
     </div>
   )
 }
