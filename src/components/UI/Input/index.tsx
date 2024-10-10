@@ -5,7 +5,7 @@ interface IProp {
   name?: string
   placeholder?: string
   disabled?: boolean
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   style?: React.CSSProperties
 }
 
