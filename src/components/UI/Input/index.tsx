@@ -1,7 +1,7 @@
 interface IProp {
   id?: string
   type: string
-  value: string
+  value?: string | number
   name?: string
   placeholder?: string
   disabled?: boolean
