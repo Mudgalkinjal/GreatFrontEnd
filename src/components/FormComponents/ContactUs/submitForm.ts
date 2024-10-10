@@ -1,10 +1,10 @@
 const SUBMIT_URL = 'https://www.greatfrontend.com/api/questions/contact-form'
 
 export default async function submitForm(
-  event: React.FormEvent<HTMLFormElement> // Correct type for form submission
+  event: React.FormEvent<HTMLFormElement>
 ) {
-  event.preventDefault() // Prevent default form submission
-  const form = event.currentTarget // Get the form element from the event
+  event.preventDefault()
+  const form = event.currentTarget
 
   try {
     if (form.action !== SUBMIT_URL) {
