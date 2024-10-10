@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 interface IProps {
   // variant?: 'Primary' | 'Secondary';
   children: React.ReactNode
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
   id?: string
 }
 
