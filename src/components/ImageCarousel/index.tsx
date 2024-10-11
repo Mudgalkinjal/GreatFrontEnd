@@ -1,4 +1,4 @@
-import { images } from './images'
+import { images } from './mock'
 import CarouselContainer from './CarouselContainer'
 
 const ImageCarousel = () => {

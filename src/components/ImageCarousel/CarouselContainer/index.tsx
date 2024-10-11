@@ -8,14 +8,17 @@ type FileData = {
   alt: string
 }
 
-type iProp = {
+type IProp = {
   images: FileData[]
 }
 
-const CarouselContainer = ({ images }: iProp) => {
+const CarouselContainer = ({ images }: IProp) => {
   const length = images.length
   const [activeImg, setActiveImg] = useState(0)
-  function handleSwipe(event: React.FormEvent<HTMLButtonElement>) {
+  function handleSwipe(event: React.BaseSyntheticEvent<HTMLButtonElement>) {
+    // debugger
+    // event.stopPropagation()
+    // console.log(event)
     const curr = event.currentTarget.id
     if (curr === 'left') {
       if (activeImg == 0) {
@@ -49,7 +52,7 @@ const CarouselContainer = ({ images }: iProp) => {
             </div>
           ))}
         </div>
-        <Button type="button" id="right" onClick={handleSwipe}>
+        <Button type="button" id="right" onClick={(e) => handleSwipe(e)}>
           &#8594;
         </Button>
       </div>
